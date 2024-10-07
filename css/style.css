@@ -12,6 +12,10 @@
     --font-small: .9rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--color-dark);
