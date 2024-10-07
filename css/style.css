@@ -177,11 +177,15 @@ h2+p {
 }
 
 /* hovers */
-a:hover {
+a:hover:not(.top-footer a) {
     box-shadow: 2px 5px 15px #fff;
 }
 
-a:not(.bg-contrast):hover {
+.top-footer a:hover {
+    text-decoration: underline;
+}
+
+a:not(:not(.bg-white)):hover, a:not(:not(.bg-dark)):hover {
     background-color: var(--color-blue);
     color: #fff;
 }
@@ -189,6 +193,31 @@ a:not(.bg-contrast):hover {
 a:not(:not(.bg-contrast)):hover {
     background-color: #fff;
     color: var(--color-contrast);
+}
+
+.icon-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-social a:hover{
+    margin-inline: 4px;
+    transform: scale(110%);
+    text-decoration: none;
+}
+
+.icon-social a:nth-child(1):hover {
+    background-color: var(--color-blue);
+}
+.icon-social a:nth-child(2):hover {
+    background: linear-gradient(to bottom right, #AC0FF1, #FD098F );
+}
+.icon-social a:nth-child(3):hover {
+    background-color: #415CA0;
+}
+.icon-social a:nth-child(4):hover {
+    background-color: #FE080A;
 }
 
 
