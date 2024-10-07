@@ -177,7 +177,7 @@ h2+p {
 }
 
 /* hovers */
-a:hover:not(.top-footer a) {
+a:hover:not(.top-footer ul a) {
     box-shadow: 2px 5px 15px #fff;
 }
 
