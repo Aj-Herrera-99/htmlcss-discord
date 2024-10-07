@@ -24,6 +24,7 @@ a {
     border: none;
     border-radius: 18px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 ul {
@@ -171,6 +172,21 @@ h2+p {
     padding: 0 10px;
 }
 
+/* hovers */
+a:hover {
+    box-shadow: 2px 5px 15px #fff;
+}
+
+a:not(.bg-contrast):hover {
+    background-color: var(--color-blue);
+    color: #fff;
+}
+
+a:not(:not(.bg-contrast)):hover {
+    background-color: #fff;
+    color: var(--color-contrast);
+}
+
 
 /* header */
 header {
@@ -187,7 +203,6 @@ header nav {
 }
 
 header li a {
-    /* background-color: #23272A; */
     padding: 10px 15px;
 }
 
