@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #255EE9;
+    --color-dark: #23272A;
+    --color-light: #e8e8e8;
+    --color-contrast: #7289DA;
+    --font-small: .9rem;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    font-size: 3rem;
+}
+
+h1 + p, h2 + p {
+    margin-top: 25px;
+}
+
+.debug {
+    /* border: 1px solid red; */
+}
+
+/* background color */
+.bg-blue {
+    background-color: var(--color-blue);
+}
+.bg-light {
+    background-color: var(--color-light);
+}
+.bg-dark {
+    background-color: var(--color-dark);
+}
+.bg-white {
+    background-color: white;
+}
+.bg-contrast {
+    background-color: var(--color-contrast);
+}
+
+/* text format */
+.text-white {
+    color: #fff;
+}
+
+.text-contrast {
+    color: var(--color-contrast);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.text-sm {
+    font-size: var(--font-small);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* utility flex */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap; /* facoltativo, uso per responsive*/
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-center {
+    justify-content: center;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.items-center {
+    align-items: center;
+}
+.items-start {
+    align-items: flex-start;
+}
+.content-start {
+    align-content: flex-start;
+}
+
+
+/* container */
+.outer-container {
+    /* border: 1px solid blue; */
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0 10px;
+}
+
+.inner-container {
+    /* border: 1px solid green; */
+    max-width: 800px;
+    margin-inline: auto;
+    padding: 0 10px;
+}
+
+/* button */
+button {
+   padding: 10px 13px;
+   border: none;
+   border-radius: 18px;
+   cursor: pointer;
+}
+
+/* header */
+header {
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    padding-top: 15px;
+}
+
+header li a {
+    /* background-color: #23272A; */
+    padding: 10px 15px;
+}
+
+header nav > :first-child, header nav > :last-child {
+    width: 26%;
+}
+
+#hero {
+    /* vai giu */
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+.arrow {
+    display: inline-block;
+    scale: 130%;
+}
+
+.gap {
+    display: inline-block;
+    width: 10px;
+}
+
+
+/* main */
+.wave-1hkxOo {
+    display: block;
+}
+.wave-1hkxOo path {
+    fill: var(--color-light) ;
+}
+
+.wave-upside-down {
+    transform: rotate(180deg);
+}
+
+main > section:not(.bg-light), main > div:not(.wave-upside-down)  {
+    /* background-color: red; */
+    margin-top: 150px;
+}
+
+main img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+main section .image {
+    flex: 1 0 67%;
+}
+
+main section .content {
+    flex: 1 0 33%;
+    min-width: 350px;
+}
+
+#technology .image, #technology .content {
+    width: 100%;
+}
+
+#call-to-action {
+    height: 400px;
+}
+
+#call-to-action > div > div {
+    padding: 50px 50px 0px ;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#call-to-action h2 {
+    margin-bottom: 50px;
+}
+/* footer */
+footer{
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+/* top-footer */
+.left {
+    float: left ;
+    min-width: 300px;
+}
+
+.left img { 
+    width: 20px;
+}
+.left div:nth-child(2) {
+    margin: 15px auto;
+}
+
+.top-footer {
+    border-bottom: 1px solid var(--color-light);
+    margin-bottom: 10px;
+}
+
+.top-footer ul {
+    flex-grow: 1;
+}
+
+.inner-list li {
+    font-size: var(--font-small);
+}
+
+.inner-list li:first-child {
+    color: var(--color-contrast);
+}
+
+.inner-list li {
+    margin-bottom: 15px;
+}
+
+.icon-social{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-social > i {
+    font-size: 19px;
+}
+
+.footer-select {
+    border-color: transparent;
+}
+
+/* bottom-footer */
+
+/* responsiveness 
+provo a giocare un po con gli effetti e conseguenze del flex e vedere quanto responsive puo essere la pagina
+*/
+.row-gap-100 {
+    row-gap: 100px;
+}
+
+main section > div {
+    row-gap: 100px;
+}
+
+header {
+    height: fit-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#hero {
+    min-height: 430px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
