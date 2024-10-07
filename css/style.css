@@ -28,7 +28,7 @@ a {
     border: none;
     border-radius: 18px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all .35s ease-in-out;
 }
 
 ul {
@@ -179,6 +179,7 @@ h2+p {
 /* hovers */
 a:hover:not(.top-footer ul a) {
     box-shadow: 2px 5px 15px #fff;
+    transform: translateY(-5px);
 }
 
 .top-footer a:hover {

@@ -1,3 +1,50 @@
 header {
     background-image: none;
 }
+
+h1 {
+    text-transform: uppercase;
+}
+
+.debug-2 {
+    /* border: 1px solid red; */
+}
+
+/* header */
+
+#hero-download {
+    min-height: 430px;
+    padding-block: 40px;
+}
+
+#hero-download > div {
+    width: 50%;
+}
+
+#hero-download .download {
+    font-size: 1.5rem;
+    border-radius: 50px;
+    position:relative
+}
+
+#hero-download .download::after {
+    content: "Windows 10 or higher";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    font-size: var(--font-small);
+    color: #fff;
+
+}
+
+/* img personal reset */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* utility flex */ 
+.items-start {
+    align-items: flex-start;
+}
